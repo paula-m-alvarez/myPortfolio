@@ -1,0 +1,81 @@
+h1, h2, h3, ul, body, p {
+    margin: 0px;
+    font-family: 'AR One Sans', sans-serif;
+}
+
+nav {
+    background-color: #3e0f2f;
+    color: #ffffff;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.half {
+    width: 50%;
+}
+
+.me {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-color: #ffe3f9;
+}
+
+.i_am {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.about_me {
+    background-color: #563f77;
+    color: #ffffff;
+    display: flex;
+    flex-direction: row;
+}
+
+.education {
+    background-color: #fe51ba;
+    text-align: center;
+}
+
+.path {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.experience {
+    background-color: #feb3eb;
+    text-align: center;
+}
+
+.proyects {
+    background-color: #fdf25c;
+    text-align: center;
+}
+
+.my_proyects {
+
+}
+
+.image_developer {
+    width: 300px;
+    height: 300px;
+}
+
+
+.icons-github {
+    width: 50px;
+    height: 50px;
+}
+
+.icons-linkedin {
+    width: 100px;
+    height: 100px;
+}
