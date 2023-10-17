@@ -4,26 +4,42 @@ h1, h2, h3, ul, body, p {
 }
 
 nav {
-    background-color: #3e0f2f;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    background-color: #3b3b3b;
     color: #ffffff;
+    height: 40px;
 }
 
 nav ul {
     list-style-type: none;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: flex-start;
+}
+
+nav ul li {
+   margin-left: 1.5rem;
 }
 
 .half {
     width: 50%;
 }
 
+.heigh {
+    height:100vh;
+}
+
+/* Start - Paula Alvarez */
+
 .me {
     display: flex;
     flex-direction: row;
+    background-color: #eae2cf;
     justify-content: space-evenly;
-    background-color: #ffe3f9;
+    align-items: center;;
 }
 
 .i_am {
@@ -32,15 +48,118 @@ nav ul {
     justify-content: center;
 }
 
+.container{
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+  
+.container h1:nth-child(1) {
+    color: #355c7d;
+    font-family: 'Fira Code', monospace;
+    font-weight: 800;
+    font-size: 20px;
+    margin: 0 0 0 35%;
+    text-align: left;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 170px;
+    animation: type 2s steps(40,end) forwards;
+}
+
+.container h1:nth-child(2) {
+    opacity: 0;
+    font-family: "Work Sans", sans-serif;
+    margin: 0 auto auto auto;
+    background: linear-gradient(to right, #f8b195, #f67280, #c06c84);
+    font-weight: 800;
+    font-size: 100px;  
+    width: 430px;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    overflow: hidden;
+    animation: shring-animation 2.2s steps(40,end) 2s forwards, blink .5s step-end infinite alternate;
+}
+
+@keyframes shring-animation {
+    0% {
+        background-position: 0 0;
+        opacity: 0;
+        width: 0;
+    }
+    1% {
+        background-position: 0 0;
+        opacity: 1;
+        border-right: 1px solid orange;
+    }
+    50% {
+        background-position: 150px 0;
+        opacity: 1;
+        border-right: 1px solid orange;
+    }
+    100% {
+        background-position: 400px 0;
+        opacity: 1;
+        border-right: 1px solid orange;
+    }
+}
+
+@keyframes type {
+    0% {
+        width: 0;
+    }
+    1%, 99%{
+        border-right: 1px solid orange;
+    }
+    100%{
+        border-right: none;
+    }
+    }
+
+    @keyframes blink {
+    50% {
+        border-color: transparent;
+    }
+}
+
+.me p {
+    font-size: 40px;
+    color:#3b3b3b;
+}
+
+/* -------------------------------------------------------------- */
+
+/* Acerca de mi */
+
 .about_me {
-    background-color: #563f77;
+    width: 100%;
+    background-color: #b4ccb9;
     color: #ffffff;
     display: flex;
     flex-direction: row;
 }
 
+.about_me .about_me_part_one {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.about_me .about_me_part_two {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    line-height: 2rem;
+}
+
+/* -------------------------------------------------------------- */
+
 .education {
-    background-color: #fe51ba;
+    background-color: #26979f;
     text-align: center;
 }
 
@@ -56,26 +175,19 @@ nav ul {
 }
 
 .proyects {
-    background-color: #fdf25c;
+    background-color: #e84d5b;
     text-align: center;
 }
 
-.my_proyects {
-
-}
 
 .image_developer {
-    width: 300px;
+    width: 485px;
     height: 300px;
 }
 
 
-.icons-github {
+.icons {
     width: 50px;
     height: 50px;
 }
 
-.icons-linkedin {
-    width: 100px;
-    height: 100px;
-}
